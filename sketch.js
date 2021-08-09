@@ -51,13 +51,13 @@ async function getBackgroundImg(){
     
     //fetch datetime from responseJSON
     var datetime = responseJSON.datetime;
-    
+    console.log(datetime);
 
     // slice the datetime to extract hour
-    var hour = datetime.slice(12,14);
+    var hour = datetime.slice(11,13);
 
     
-    if(hour>=0 && hour<18 ){
+    if(hour>=06 && hour<12 ){
         bg = "sunrise.png";
     }
     else{
